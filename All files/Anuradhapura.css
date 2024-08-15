@@ -1,0 +1,153 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff86; /* Adjust the alpha value (0.8) for transparency */
+    color: inherit;
+    padding: 0.8rem;
+    text-align: center;
+    position: relative;
+    
+}
+
+header h1{
+    color: #4ad488 ;
+}
+
+.back-button {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.back-button a {
+    color: #0b0a0a;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #4ad488;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button a:hover {
+    background-color: #4ad488bc;
+}
+
+
+.home-button {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+.home-button a {
+    color: #0b0a0a;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #4ad488;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-button a i {
+    font-size: 1rem;
+    
+
+}
+
+
+.home-button a:hover {
+    background-color: #777;
+}
+
+.main {
+    padding: 2rem;
+}
+
+.schools-list {
+    list-style-type: none;
+    padding: 100px;
+    margin-top: -3%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.school-item {
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, background-color 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(33.333% - 1rem); /* Three items per row with gap */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer; /* Add cursor pointer for hover effect */
+}
+
+.school-item:hover {
+    background-color: #ffffff;
+}
+
+.school-image {
+    width: 60%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.school-details {
+    padding: 1rem;
+    text-align: center;
+}
+
+.school-details h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.school-details p {
+    margin: 0;
+    color: #555;
+}
+
+.view-button {
+    margin-top: 10%;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #4ad488;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.view-button:hover {
+    background-color: #4ad4887d;
+}
+
+
+
+footer {
+    background-color:#ffffffff; /* Adjust the alpha value (0.8) for transparency */
+    justify-content: center;
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+    margin-left: 10;
+    margin-right: 10;
+    align-items: center;
+}
+
+.footer-content {
+    
+    text-align: center;
+    
+}

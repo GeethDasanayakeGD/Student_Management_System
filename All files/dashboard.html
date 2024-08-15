@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard_style.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Student Management system</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul class="main-menu">
+          <li>
+            <a href="#" class="logo">
+              <img src="logo.jpg" alt="Logo" />
+              <span class="nav-item">Admin</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-menorah"></i>
+              <span class="nav-item">Dashboard</span>
+            </a>
+          </li>
+          <li class="has-submenu">
+            <a href="#">
+              <i class="fas fa-user-graduate"></i>
+              <span class="nav-item">Students</span>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="#">
+                  <i class="fas fa-user-plus"></i>
+                  <span class="nav-item">Add Student</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-user-edit"></i>
+                  <span class="nav-item">Edit Student</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <span class="nav-item">Teachers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-chart-bar"></i>
+              <span class="nav-item">Attendance</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cog"></i>
+              <span class="nav-item">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log Out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <section class="main">
+        <div class="main-top">
+          <h1>Student Management system</h1>
+          <i class="fas fa-user-cog"></i>
+        </div>
+        <div class="users">
+          <div class="card">
+            <img src="img3.jpg" />
+            <h4>Malaka</h4>
+            <p>Mathematics</p>
+            <div class="per">
+              <table>
+                <tr>
+                  <td><span>12 - B</span></td>
+                </tr>
+            
+              </table>
+            </div>
+            <button>Profile</button>
+          </div>
+          <div class="card">
+            <img src="img1.jpg" />
+            <h4>Amal</h4>
+            <p>Bio</p>
+            <div class="per">
+              <table>
+                <tr>
+                  <td><span>12 - B</span></td>
+                </tr>
+              </table>
+            </div>
+            <button>Profile</button>
+          </div>
+          <div class="card">
+            <img src="img2.jpg" />
+            <h4>Kamal</h4>
+            <p>Commerce</p>
+            <div class="per">
+              <table>
+                <tr>
+                  <td><span>12 - A</span></td>
+                </tr>
+                
+              </table>
+            </div>
+            <button>Profile</button>
+          </div>
+          <div class="card">
+            <img src="img3.jpg" />
+            <h4>Pasindu</h4>
+            <p>Art</p>
+            <div class="per">
+              <table>
+                <tr>
+                  <td><span>12 - B</span></td>
+                </tr>
+                
+              </table>
+            </div>
+            <button>Profile</button>
+          </div>
+          </div>
+          <se class="attendance">
+            <div class="attendance-list">
+                <h1>Attendance-List</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Registration Number</th>
+                            <th>Name</th>
+                            <th>Class</th>
+                            <th>Subject</th>
+                            <th>Sports</th>
+                            <th>Class teacher's name</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>       
+                            <td>001</td>
+                            <td>Malaka</td>
+                            <td>12 - B</td>
+                            <td>Mathematics</td>
+                            <td>Cricket</td>
+                            <td>Ms. Udayangani</td>
+                            <td><button>View</button></td>
+                        </tr>
+
+                        <tr class="active">       
+                          <td>002</td>
+                          <td>Amal</td>
+                          <td>12 - B</td>
+                          <td>Bio</td>
+                          <td>Cricket</td>
+                          <td>Ms. Udayangani</td>
+                          <td><button>View</button></td>
+                        </tr>
+
+                        <tr>       
+                            <td>003</td>
+                            <td>Kamal</td>
+                            <td>12 - A</td>
+                            <td>Commerce</td>
+                            <td>Volly ball</td>
+                            <td>Ms. Malkanthi</td>
+                            <td><button>View</button></td>
+                        </tr>
+
+                        <tr>       
+                            <td>004</td>
+                            <td>Pasindu</td>
+                            <td>12 - A</td>
+                            <td>Art</td>
+                            <td> - </td>
+                            <td>Ms. Malkanthi</td>
+                            <td><button>View</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          </se>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

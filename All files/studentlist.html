@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member List</title>
+    <link rel="stylesheet" href="stylesforstudent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        .back-button a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background-color: #4ad488;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        
+        .back-button a i {
+            margin-right: 5px;
+        }
+        
+        .back-button a:hover {
+            background-color: #4ad488bc;
+        }
+        
+        .container {
+            margin-top: 60px; /* Adjust the margin to make space for the back button */
+        }
+    </style>
+</head>
+<body>
+    <div class="back-button">
+        <a href="years.html"><i class="fa-solid fa-arrow-left"></i> Back</a>
+    </div>
+    <div class="container">
+        <h1>Student List of 2019</h1>
+
+        <hr>
+        
+        <h3>Total Students: 245</h3>
+        <h3>Current Region: Anuradhapura</h3>
+        <div class="member">
+            <img src="1.jpeg" alt="Profile Picture">
+            <div class="details">
+                <p><strong>Name: A.D. Perera</strong> <b>| Gender : Female | Age : 22 | Live in : Anuradhapura | School : Anuradhapura Central College</b></p>
+                <p>O/L Year: 2018</p>
+                <p>O/L Results: 3A's 8B's</p>
+                <p>A/L Year: 2019</p>
+                <p>A/L Results: 3A's</p>
+                <p>Island Rank: 1090</p>
+                <button class="cv-button" onclick="downloadCV('1.pdf')">Download Details</button>
+            </div>
+        </div>
+        <div class="member">
+            <img src="2.jpeg" alt="Profile Picture">
+            <div class="details">
+                <p><strong>Name: T.J. Perera</strong> <b>| Gender : Male | Age : 21 | Live in : Anuradhapura | School : Anuradhapura Central College</b></p>
+                <p>O/L Year: 2018</p>
+                <p>O/L Results: 7A's 2B's</p>
+                <p>A/L Year: 2019</p>
+                <p>A/L Results: 3A's</p>
+                <p>Island Rank: 1400</p>
+                <button class="cv-button" onclick="downloadCV('2.pdf')">Download Details</button>
+            </div>
+        </div>
+        <div class="member">
+            <img src="3.jpeg" alt="Profile Picture">
+            <div class="details">
+                <p><strong>Name: D.H. Gunarawhatta</strong> <b>| Gender : Male | Age : 19 | Live in : Anuradhapura | School : Anuradhapura Central College</b></p>
+                <p>O/L Year: 2018</p>
+                <p>O/L Results: 6A's 3B's</p>
+                <p>A/L Year: 2019</p>
+                <p>A/L Results: 3A's</p>
+                <p>Island Rank: 900</p>
+                <button class="cv-button" onclick="downloadCV('3.pdf')">Download Details</button>
+            </div>
+        </div>
+        <div class="member">
+            <img src="4.jpeg" alt="Profile Picture">
+            <div class="details">
+                <p><strong>Name: Y.K. Perera</strong><b> | Gender : Male | Age : 21 | Live in : Anuradhapura | School : Anuradhapura Central College</b></p>
+                <p>O/L Year: 2018</p>
+                <p>O/L Results: 9A's</p>
+                <p>A/L Year: 2019</p>
+                <p>A/L Results: 3A's</p>
+                <p>Island Rank: 890</p>
+                <button class="cv-button" onclick="downloadCV('4.pdf')">Download Details</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function downloadCV(file) {
+            window.location.href = file;
+        }
+    </script>
+</body>
+</html>

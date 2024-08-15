@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Year Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+        }
+        
+        header {
+            background-color: #ffffff86; /* Adjust the alpha value (0.8) for transparency */
+            color: inherit;
+            padding: 0.8rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        header h1 {
+            color: #4ad488;
+        }
+        
+        .back-button {
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+        
+        .back-button a {
+            color: #0b0a0a;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background-color: #4ad488;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button a:hover {
+            background-color: #4ad488bc;
+        }
+        
+        .home-button {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+        }
+        
+        .home-button a {
+            color: #0b0a0a;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background-color: #4ad488;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .home-button a i {
+            font-size: 1rem;
+        }
+        
+        .home-button a:hover {
+            background-color: #777;
+        }
+        
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Adjust the width as needed */
+            max-width: 1200px; /* Optional max-width for responsiveness */
+            margin: 0 auto; /* Center the container */
+        }
+        
+        .year-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 20px; /* Space between items */
+            list-style-type: none;
+            padding: 20px; /* Padding around the grid */
+            margin: 0;
+            width: 100%; /* Full width of the container */
+        }
+        
+        .year-list li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .year-list input[type="text"] {
+            border: 1px solid #ccc;
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px;
+            width: 100%;
+            height: 150px; /* Increased height for larger size */
+            text-align: center;
+            font-size: 1.5rem; /* Increased font size */
+            background-color: #fff;
+            transition: background-color 0.3s, border-color 0.3s;
+            cursor: pointer;
+        }
+        
+        .year-list input[type="text"]:hover {
+            background-color: #4ad488; /* Change background color to green */
+            border-color: #999;
+            color: #fff; /* Optional: Change text color to white */
+        }
+        
+        .year-list input[type="text"]:focus {
+            outline: none;
+            border-color: #666;
+        }
+        
+        footer {
+            background-color: #ffffffa6; /* Adjust the alpha value (0.8) for transparency */
+            color: #000000;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function goToStudentList() {
+            window.location.href = 'studentlist.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Year <i class="fa-solid fa-school"></i></h1>
+        <div class="back-button">
+            <a href="Anuradhapura.html"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <div class="home-button">
+            <a href="Provinces.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+    </header>
+    <div class="container">
+        <ul class="year-list">
+            <li><input type="text" value="2019" maxlength="20" readonly onclick="goToStudentList()"></li>
+            <li><input type="text" value="2020" maxlength="20" readonly></li>
+            <li><input type="text" value="2021" maxlength="20" readonly></li>
+            <li><input type="text" value="2022" maxlength="20" readonly></li>
+            <li><input type="text" value="2023" maxlength="20" readonly></li>
+            <li><input type="text" value="2024" maxlength="20" readonly></li>
+        </ul>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Student Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
